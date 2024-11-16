@@ -14,7 +14,7 @@ export class TaskService implements ITaskService {
     return true;
   }
   async updateTask(task: Task): Promise<boolean> {
-    const filteredTasks = this._tasks.filter((task) => task.id != task.id);
+    const filteredTasks = this._tasks.filter((tk) => tk.id != task.id);
     this._tasks = [...filteredTasks, task];
     return true;
   }
